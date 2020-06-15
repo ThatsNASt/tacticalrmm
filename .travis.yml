@@ -6,6 +6,7 @@ matrix:
       python: "3.7"
       services:
         - postgresql
+        - redis
 
       before_script:
         - psql -c 'CREATE DATABASE travisci;' -U postgres
