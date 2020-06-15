@@ -17,7 +17,7 @@ from checks.models import Check
 
 class BaseTestCase(TestCase):
     @patch("automation.tasks.generate_agent_checks_from_policies_task.run")
-    def setUp(self):
+    def setUp(self, gen_task):
 
         self.john = User(username="john")
         self.john.set_password("password")
