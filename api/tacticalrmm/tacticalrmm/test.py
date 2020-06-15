@@ -16,7 +16,7 @@ from checks.models import Check
 
 
 class BaseTestCase(TestCase):
-    def setUp(self, gen_task):
+    def setUp(self):
 
         self.john = User(username="john")
         self.john.set_password("password")
